@@ -39,6 +39,8 @@ h1,h2,h3,h4,p {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 
 }
 
@@ -64,8 +66,8 @@ img {
     margin-right: auto;
     padding-left: 16px; 
     padding-right: 16px;
-    outline: 2px solid red;
-    outline-offset: -2px;
+    /* outline: 2px solid red;
+    outline-offset: -2px; */
 
 /* 
     width: 1158px;
@@ -145,7 +147,6 @@ img {
     margin-bottom: 8px;
 
 }
-
 
 
 .description-text {
@@ -229,9 +230,9 @@ img {
 }
 
 .contacts {
-    /* display: flex; */
+    
     align-items: center;
-    /* gap: 40px; */
+  
     
 }
 
@@ -258,7 +259,7 @@ img {
     display: flex;
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:428px) {
     .menu {
         display: none;
     }
@@ -272,7 +273,7 @@ img {
 
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:428px) {
     .address {
         display: none;
     }
@@ -351,6 +352,55 @@ img {
  
  /* HERO */
 
+ @media only screen and (max-width: 428px) {
+    .hero {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people_office_mob@1x.jpg);
+     }
+
+     @media (min-device-pixel-ration: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people_office_mob@2x.jpg);
+         }
+
+     }
+
+ }
+
+
+ @media only screen and (min-width: 429px) and (max-width: 768px) {
+    .hero {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people_office_tab@1x.jpg);
+    }
+
+    @media (min-device-pixel-ration: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people_office_tab@2x.jpg);
+        }
+        
+    }
+  
+ }
+
+ @media only screen and (min-width: 769px) {
+    .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people_office.jpg);
+    }
+
+    @media (min-device-pixel-ration: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),  url(../images/hero/people-office_desk@2x.jpg);
+          }
+        
+    }
+ }
+
+
  .hero-section {
   
     padding-top: 188px; 
@@ -363,15 +413,15 @@ img {
         padding-bottom: 112px;
 
     }
-}
+ }
 
-@media only screen and (min-width: 767px) {
+ @media only screen and (min-width: 767px) {
     .hero-section {
         padding-top: 112px;
         padding-bottom: 112px;
 
     }
-}
+ }
 
 
  .hero {
@@ -458,8 +508,6 @@ img {
 }
 
 
-
-
 @media only screen and (min-width: 1157px) {
     .doing-wrapper {
         background: var(--cloud);
@@ -482,13 +530,14 @@ img {
     gap: 24px; 
 }
 
-@media only screen and (min-width: 427px) {
+
+@media only screen and (max-width: 428px) {
     .description-list {
-        display: flex;
         flex-direction: column;
-        align-items: center;
+        gap: 72px;
+        
     }
-}
+} 
 
 
 .description-item {
@@ -497,6 +546,11 @@ img {
 
 } 
 
+@media only screen and (max-width: 428px) {
+    .description-item {
+        width: calc((100% - 0 * 24px) / 1);
+    }
+}
 
 
 
@@ -510,6 +564,20 @@ img {
     flex-wrap: wrap;
     gap: 24px;
 
+}
+
+@media only screen and (max-width: 428px) {
+    .doing {
+       display: none;
+
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .doing {
+       display: none;
+
+    }
 }
 
 
@@ -560,6 +628,7 @@ img {
 
 }
 
+
 .img-team-item {
     width: 264px;
     background-color: var(--white);
@@ -567,6 +636,19 @@ img {
     
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px; 
+}
+
+@media only screen and (max-width: 428px) {
+    .img-team-item {
+        width: calc((100% - 0 * 24px) / 1);
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+    .img-team-item {
+        width: calc((100% - 1 * 24px) / 2);
+    }
 }
 
 .team-wrapper {
@@ -586,9 +668,11 @@ img {
 
 .customers-list {
     display: flex;
+   
     align-items: center;
     gap: 24px;
 }
+
 
 .customers {
     background-color: var(--white);
@@ -599,6 +683,7 @@ img {
 .customers-item {
     width: calc((100% - 120px) / 6);
 }
+
 
 .customers-link {
     border: 1px solid var(--light-slate);
@@ -660,6 +745,14 @@ img {
     display: flex;
     
     align-items: baseline;
+}
+
+@media only screen and (max-width: 428px) {
+    .logo-tipe .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 72px;
+    }
 }
 
 .social-link {
@@ -752,6 +845,14 @@ img {
     display: flex;
     align-items: baseline;
     color: var(--white);
+}
+
+@media only screen and (max-width: 428px) {
+    .subscribe-form {
+        flex-direction: column;
+        align-items: center;
+        gap: 72px;
+    }
 }
 
 .subscribe-form-input {
