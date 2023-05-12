@@ -62,11 +62,9 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg
-            width="24"
-            height="24">
+          <svg width="24" height="24">
             <use href="./images/icons.svg#icon-mobile-menu"></use>
-            
+
             <path
               fill-rule="evenodd"
               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
@@ -87,7 +85,7 @@
             Order Service
           </button>
         </div>
-      </section> 
+      </section>
 
       <!-- DESCRIPTION -->
       <section class="description section">
@@ -159,44 +157,65 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
 
       <!-- DOING -->
 
-       <section class="doing text">
+      <section class="doing text">
         <div class="container">
           <h2 class="title-description">What are we doing</h2>
 
           <ul class="img-list list">
             <li class="img-item">
               <img
-                src="./images/what_are_we_doing/monitor.jpg"
+                srcset="
+                  ./images\what_are_we_doing\monitor.webp,
+                  ./images\what_are_we_doing\monitor_desk@2x.webp
+                "
+                type="image/webp"
+                sizes="(min-width: 1158px) 360px, 100vw"
+                src="./images/what_are_we_doing/monitor.webp"
                 alt="monitor"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
 
             <li class="img-item">
               <img
-                src="./images/what_are_we_doing/phone.jpg"
+                srcset="
+                  ./images\what_are_we_doing\phone.webp,
+                  ./images\what_are_we_doing\phone_desk@2x.webp
+                "
+                type="image/webp"
+                sizes="(min-width: 1158px) 360px, 100vw"
+                src="./images/what_are_we_doing/phone.webp"
                 alt="phone"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
 
             <li class="img-item">
               <img
-                src="./images/what_are_we_doing/together.jpg"
+                srcset="
+                  ./images\what_are_we_doing\together.webp,
+                  ./images\what_are_we_doing\togetherdesk@2x.webp
+                "
+                type="image/webp"
+                sizes="(min-width: 1158px) 360px, 100vw"
+                src="./images/what_are_we_doing/together.webp"
                 alt="laptop and phone"
                 width="360"
                 height="300"
+                loading="lazy"
               />
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
 
       <!-- OUR TEAM -->
 
@@ -207,10 +226,22 @@
           <ul class="img-list-team list">
             <li class="img-team-item">
               <img
-                src="./images/our_team/mark_guerrero.jpg"
+                class="team-img"
+                srcset="
+                  ./images\our_team\mark_guerrero_mob@1x.webp,
+                  ./images\our_team\mark_guerrero_mob@2x.webp,
+                  ./images\our_team\mark_guerrero_tab@1x.webp,
+                  ./images\our_team\mark_guerrero_tab@2x.webp,
+                  ./images\our_team\mark_guerrero.webp,
+                  ./images\our_team\mark_guerrero_desk@2x.webp
+                "
+                type="image/webp"
+                sizes="(min-width: 1158px) 264px,( min-width: 768px) 264px, (min-width: 428px) 264px, 100vw"
+                src="./images/our_team/mark_guerrero.webp"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-wrapper">
                 <h3 class="description-title">Mark Guerrero</h3>
@@ -253,10 +284,22 @@
 
             <li class="img-team-item">
               <img
-                src="./images/our_team/tom_ford.jpg"
+                class="team-img"
+                srcset="
+                  ./images\our_team\tom_ford_mob@1x.webp,
+                  ./images\our_team\tom_ford_mob@2x.webp,
+                  ./images\our_team\tom_ford_tab@1x.webp,
+                  ./images\our_team\tom_ford_tab@2x.webp,
+                  ./images\our_team\tom_ford.webp,
+                  ./images\our_team\tom_ford_desk@2x.webp
+                "
+                type="image/webp"
+                sizes="(min-width: 1158px) 264px,( min-width: 768px) 264px, (min-width: 428px) 264px, 100vw"
+                src="./images/our_team/tom_ford.webp"
                 alt="Tom Ford"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-wrapper">
                 <h3 class="description-title">Tom Ford</h3>
@@ -299,10 +342,22 @@
 
             <li class="img-team-item">
               <img
-                src="./images/our_team/camila_garcia.jpg"
+                class="team-img"
+                srcset="
+                  ./images\our_team\camila_garcia_mob@1x.webp,
+                  ./images\our_team\camila_garcia_mob@2x.webp,
+                  ./images\our_team\camila_garcia_tab@1x.webp,
+                  ./images\our_team\camila_garcia_tab@2x.webp,
+                  ./images\our_team\camila_garcia.webp,
+                  ./images\our_team\camila_garcia_desk@2x.webp
+                "
+                type="image/webp"
+                sizes="(min-width: 1158px) 264px,( min-width: 768px) 264px, (min-width: 428px) 264px, 100vw"
+                src="./images/our_team/camila_garcia.webp"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-wrapper">
                 <h3 class="description-title">Camila Garcia</h3>
@@ -345,10 +400,22 @@
 
             <li class="img-team-item">
               <img
-                src="./images/our_team/daniel_wilson.jpg"
+                class="team-img"
+                srcset="
+                  ./images\our_team\daniel_wilson_mob@1x.webp,
+                  ./images\our_team\daniel_wilson_desk@2x.webp,
+                  ./images\our_team\daniel_wilson_tab@1x.webp,
+                  ./images\our_team\daniel_wilson_tab@2x.webp,
+                  ./images\our_team\daniel_wilson.webp,
+                  ./images\our_team\daniel_wilson_desk@2x.webp
+                "
+                type="image/webp"
+                sizes="(min-width: 1158px) 264px,( min-width: 768px) 264px, (min-width: 428px) 264px, 100vw"
+                src="./images/our_team/daniel_wilson.webp"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
+                loading="lazy"
               />
               <div class="team-wrapper">
                 <h3 class="description-title">Daniel Wilson</h3>
@@ -446,7 +513,7 @@
           </ul>
         </div>
       </section>
-    </main> 
+    </main>
 
     <!-- FOOTER -->
 
@@ -539,7 +606,7 @@
           </form>
         </div>
       </div>
-    </footer> 
+    </footer>
 
     <!-- MODAL WINDOW -->
     <!-- <div class="backdrop is-hidden" data-modal>
@@ -640,7 +707,7 @@
 
       <ul class="mobile-menu list">
         <li class="mobile-menu-item">
-          <a href="" class="menu-link  link">Studio</a>
+          <a href="" class="menu-link link">Studio</a>
         </li>
         <li class="mobile-menu-item">
           <a href="" class="menu-link link">Portfolio</a>
@@ -648,17 +715,18 @@
         <li class="mobile-menu-item">
           <a href="" class="menu-link link">Contacts</a>
         </li>
-        
       </ul>
 
       <ul class="mobile-contacts list">
         <li class="mobile-contacts-item">
-          <a class="mobile-contacts-link-tel link" href="tel:">+11 (000) 111-11-11</a>
-
+          <a class="mobile-contacts-link-tel link" href="tel:"
+            >+11 (000) 111-11-11</a
+          >
         </li>
         <li class="mobile-contacts-item">
-          <a class="mobile-contacts-link link" href="mailto:">info@devstudio.com</a>
-
+          <a class="mobile-contacts-link link" href="mailto:"
+            >info@devstudio.com</a
+          >
         </li>
       </ul>
 
@@ -718,7 +786,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    
+
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
