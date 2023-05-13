@@ -64,7 +64,7 @@ img {
     padding-left: 15px; 
     padding-right: 15px;
    
-    /* width: 1158px; */
+
 }
 
 @media only screen and (max-width: 427px) {
@@ -100,6 +100,12 @@ img {
     text-transform: uppercase;
     color: var(--logo-color); 
     
+}
+
+@media only screen and (min-width: 768px) {
+    .logo {
+        margin-right: 120px;
+    }
 }
 
 .logo-dark {
@@ -141,6 +147,17 @@ img {
     }
 }
 
+@media only screen and (min-width: 768px) {
+    .description-title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.1;
+
+
+       letter-spacing: 0.02em;
+       text-transform: capitalize;
+    }
+}
 
 .description-text {
     font-weight: 400;
@@ -148,6 +165,17 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
+}
+
+@media only screen and (min-width: 768px) {
+    .description-text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+
+
+        letter-spacing: 0.02em;
+    }
 }
 
 .title-description {
@@ -161,9 +189,9 @@ img {
     margin-bottom: 72px;
 }
 
+
 .img-item {
     width: 360px;
-    height: 300px;
     width: calc((100% - 3 * 16px) / 3);
 }
 
@@ -195,12 +223,13 @@ img {
     align-items: center;
 }
 
-.logo {
-    /* margin-right: auto; */
+/* .logo {
+    /margin-right: auto; 
     margin-right: 120px;
     
     display: block;
-}
+} */
+
 
 
 @media only screen and (min-width: 1157px) {
@@ -219,10 +248,17 @@ img {
 }
 
 .contacts {
-    
     align-items: center;
 }
 
+
+@media only screen and (min-width:768px) and (max-width:1157px) {
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
 
 @media only screen and (min-width: 1157px) {
     .contacts {
@@ -262,6 +298,7 @@ img {
         display: none;
     }
 }
+
 
 
 .contacts-link:hover,
@@ -323,6 +360,13 @@ img {
     transition: color var(--animation-base);
 }
 
+@media only screen and (min-width:768px) {
+    .contacts-link {
+        font-size: 12px;
+        line-height: 1.2;
+    }
+}
+
 
 .contacts-link:hover,
 .contacts-link:focus {
@@ -332,6 +376,7 @@ img {
  
  
 /* HERO */
+
 
 @media only screen and (max-width: 428px) {
     .hero {
@@ -600,6 +645,12 @@ img {
     justify-content: center;
 }
 
+@media only screen and (min-width: 768px) {
+    .img-list-team {
+       row-gap: 64px;
+    }
+}
+
 
 .img-team-item {
     max-width: 264px;
@@ -644,6 +695,23 @@ img {
     align-items: center;
     gap: 24px;
     justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .customers-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        row-gap: 72px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .customers-list {
+        justify-content: center;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
 }
 
 
@@ -710,6 +778,17 @@ img {
     padding-right: 15px;
 }
 
+@media only screen and (min-width: 768px) {
+    .customers-container {
+       max-width: 768px;
+    }
+}
+
+@media only screen and (min-width: 1128px) {
+    .customers-container {
+       max-width: 1128px;
+    }
+}
 
 
 /* FOOTER */
@@ -736,11 +815,11 @@ img {
     align-items: baseline;
 }
 
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 767px) {
     .logo-tipe .footer-container {
         flex-direction: column;
         align-items: center;
-        gap: 72px;
+        
     }
 }
 
@@ -768,9 +847,10 @@ img {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .footer-logo-container {
-        margin-right: 24px;
+        text-align: center;
+        margin-bottom: 72px;
     }
 }
 
@@ -799,6 +879,7 @@ img {
 @media only screen and (max-width: 767px) {
     .footer-social-conteiner {
         text-align: center;
+        margin-bottom: 72px;
     }
 }
 
@@ -833,6 +914,11 @@ img {
     } 
 }
 
+@media only screen and (min-width: 1158px) {
+    .footer-container {
+       flex-wrap: nowrap;
+    } 
+}
 
 @media only screen and (max-width: 767px) {
     .subscribe {
@@ -864,6 +950,12 @@ img {
     transition: border var(--animation-base);
 }
 
+@media only screen and (max-width: 767px) {
+    .subscribe input {
+       width: 398px;
+    }
+}
+
 .subscribe input:hover,
 .subscribe input:focus {
     border: 1px solid var(--logo-color);
@@ -892,11 +984,6 @@ img {
     outline: 1px solid transparent;
 }
 
-@media only screen and (min-width: 427px) {
-    .subscribe-form-input {
-        width: 100%;
-    }
-}
 
 
 .subscribe-form-input::placeholder {
