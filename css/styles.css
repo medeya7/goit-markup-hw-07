@@ -67,7 +67,7 @@ img {
 
 }
 
-@media only screen and (max-width: 427px) {
+@media only screen and (min-width: 427px) {
     .container {
         max-width: 427px;
     }
@@ -780,7 +780,7 @@ img {
 
 @media only screen and (min-width: 768px) {
     .customers-container {
-       max-width: 768px;
+       max-width: 552px;
     }
 }
 
@@ -1430,11 +1430,15 @@ img {
 
      font-weight: 700;
      font-size: 36px;
-     line-height: 40px;
+     line-height: 1.1;
 
 
      letter-spacing: 0.02em;
      text-transform: capitalize;
+}
+
+.mobile-menu-item + .mobile-menu-item {
+margin-top: 40px;
 }
 
 .mobile-contacts {
@@ -1454,6 +1458,10 @@ img {
 
     color: #4D5AE5;
 
+}
+
+.mobile-contacts-item {
+    margin-top: 40px;
 }
 
 .mobile-contacts-link {
